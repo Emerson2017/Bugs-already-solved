@@ -1,0 +1,9 @@
+ERRO: [22001][1292] Data truncation: Truncated incorrect DOUBLE value: 'canceled'
+
+COMANDO UTILIZADO COM ERRO : UPDATE sales_flat_order SET status = 'canceled' AND state='canceled' where increment_id="600000040";
+
+SOLUÇÃO: Para executar um Update em duas colunas da mesma tabela não é preciso utilizar o "AND".
+
+COMANDO CORRETO: UPDATE sales_flat_order SET status = 'canceled', state='canceled' where increment_id="600000040";
+
+obs: não esquecer de utilizar "," (virgula) para separar as duas colunas que serão alteradas.
