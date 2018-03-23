@@ -1,0 +1,16 @@
+HABILITANDO .CLASS CSS VIA JS: 
+
+	if(condição){
+
+		input.addClass('the-name-your-class');
+
+	}else{...}
+
+
+DESABILITANDO .CLASS CSS VIA JS:
+
+	if(condição){
+
+		input.removeClass('the-name-your-class');
+
+	}else{...}
