@@ -1,0 +1,16 @@
+ERRO -> Ao tentar entrar em uma pasta foi-me retornado o seguindo erro :
+
+ -----> bash : cd : too many arguments <------
+
+
+
+Descrição:
+
+Estava tentando entrar em uma pasta com nomenclatura : Emerson rocha, então logicamente tentei --> cd Emerson rocha, mas o git persistia retornava o erro acima.
+
+Após uma rápido pesquisa verifiquei que o git não encara isso como uma só STRING, logo, retornava que eu estava passando 'muitos argumetos'.
+
+
+SOLUÇÃO: passar a nomenclatura da pasta dentro de aspas simples, formando assim uma só string.
+
+----> cd 'Emerson rocha'
