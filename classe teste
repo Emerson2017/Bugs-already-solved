@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package aula8;
+
+/**
+ *
+ * @author aluno
+ */
+
+import java.util.Scanner;
+public class TesteCarro_Motor {
+    
+   public static void main(String[] args){
+        
+        Motor motor = new Motor();
+        Motor motor2 = new Motor();
+        Carro carro1 = new Carro();
+        Carro carro2 = new Carro();
+        
+        motor.setCilindrada(1.0f);
+        motor2.setCilindrada(3.0f);
+        
+        carro1.setModelo("Fiat");
+        carro1.setMotor(motor);
+        
+        carro2.setModelo("Golf");
+        carro2.setMotor(motor2);
+        
+        
+        
+        System.out.println("Velocidade máxima " + carro1.velocidadeMaxima() + " Modelo " + carro1.getModelo());
+        System.out.println("Velocidade máxima " + carro2.velocidadeMaxima() + " Modelo " + carro2.getModelo());
+        
+        
+    
+    }
+    
+    
+}
